@@ -18,3 +18,22 @@ aside {
   background-color: #ffffff;
   float: right;
 }
+
+h1, h2 {
+  padding: 10px;
+}
+p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+footer {
+  clear: both;
+}
+
+ul {
+  paddding-left: 10px;
+}
+li {
+  paddding-left: 10px;
+}
