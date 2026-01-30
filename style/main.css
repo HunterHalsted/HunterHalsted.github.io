@@ -6,3 +6,8 @@ body {
   background-color: azure;
   margin: 10px auto;
 }
+main {
+  width: 50%;
+  height: 500px
+  background-color: #ffffff;
+}
