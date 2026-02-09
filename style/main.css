@@ -8,13 +8,13 @@ body {
 }
 main {
   width: 50%;
-  height: 500px
+  height: 500px;
   background-color: #ffffff;
   float: left;
 }
 aside {
   width: 50%;
-  height: 500px
+  height: 500px:
   background-color: #ffffff;
   float: right;
 }
@@ -32,10 +32,10 @@ footer {
 }
 
 ul {
-  paddding-left: 10px;
+  padding-left: 10px;
 }
 li {
-  paddding-left: 10px;
+  padding-left: 10px;
 }
 .bluetouch img {
   border: 2px solid #B5D3E7;
@@ -45,3 +45,4 @@ li {
   position: relative;
   right: 10px;
   top: 10px;
+}
