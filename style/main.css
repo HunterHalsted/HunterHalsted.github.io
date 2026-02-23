@@ -1,3 +1,4 @@
+/* Hunter Halsted Personal Portfolio CSS, Hunter Halsted Developed 1-23-2026, and date tested 1-23-2026 */
 /* @author: hunter halsted date dev: 2/2/2026 */
 
 /* style for the body */
@@ -8,13 +9,13 @@ body {
 }
 main {
   width: 50%;
-  height: 500px
+  height: 500px;
   background-color: #ffffff;
   float: left;
 }
 aside {
   width: 50%;
-  height: 500px
+  height: 500px:
   background-color: #ffffff;
   float: right;
 }
@@ -32,10 +33,10 @@ footer {
 }
 
 ul {
-  paddding-left: 10px;
+  padding-left: 10px;
 }
 li {
-  paddding-left: 10px;
+  padding-left: 10px;
 }
 .bluetouch img {
   border: 2px solid #B5D3E7;
