@@ -1,49 +1,224 @@
-/* Hunter Halsted Personal Portfolio CSS, Hunter Halsted Developed 1-23-2026, and date tested 1-23-2026 */
-/* @author: hunter halsted date dev: 2/2/2026 */
+﻿/* Hunter Halsted Personal Portfolio CSS */
+* {
+  box-sizing: border-box;
+}
 
-/* style for the body */
+html,
 body {
-  width: 725px;
-  background-color: azure;
-  margin: 10px auto;
-}
-main {
-  width: 50%;
-  height: 500px;
-  background-color: #ffffff;
-  float: left;
-}
-aside {
-  width: 50%;
-  height: 500px:
-  background-color: #ffffff;
-  float: right;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
 }
 
-h1, h2 {
-  padding: 10px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #102238;
+  background: linear-gradient(180deg, #eef7ff 0%, #dcecff 100%);
 }
-p {
-  padding-left: 5px;
-  padding-right: 5px;
+
+.page-wrap {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1.25rem;
+}
+
+.site-shell {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #c7dcf0;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(16, 34, 56, 0.08);
+  overflow: hidden;
+}
+
+.site-header {
+  padding: 1rem 1.25rem;
+  background: #f0f8ff;
+}
+
+.bluetouch {
+  width: 100%;
+}
+
+.bluetouch img {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border: 3px solid #b5d3e7;
+  border-radius: 10px;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+#nav_menu {
+  background: #0f3a61;
+}
+
+#nav_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#nav_menu li {
+  margin: 0;
+}
+
+#nav_menu a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.85rem 1.1rem;
+  font-weight: 700;
+}
+
+#nav_menu a:hover,
+#nav_menu a.current {
+  background: #1f5f95;
+}
+
+.content {
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.intro {
+  margin-bottom: 1rem;
+}
+
+.intro h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.6rem, 2.2vw, 2.4rem);
+}
+
+.intro h2 {
+  margin: 0;
+  color: #1f5f95;
+  font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.columns > section,
+.columns > aside,
+.columns > article {
+  flex: 1 1 320px;
+  background: #f7fbff;
+  border: 1px solid #d6e7f7;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.interest-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.interest-card {
+  flex: 1 1 260px;
+  background: #f5fbff;
+  border: 1px solid #d4e7f8;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.interest-card h3 {
+  margin-top: 0;
 }
 
 footer {
-  clear: both;
+  border-top: 1px solid #d6e7f7;
+  padding: 1rem 1.25rem;
+  background: #f6fbff;
 }
 
-ul {
-  padding-left: 10px;
-}
-li {
-  padding-left: 10px;
-}
-.bluetouch img {
-  border: 2px solid #B5D3E7;
+footer p {
   margin: 0;
-  padding: 0;
-  border-radius: 1000px;
-  position: relative;
-  right: 10px;
-  top: 10px;
+}
+
+.slicknav_menu {
+  background: #0f3a61;
+}
+
+.slicknav_nav a {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.slicknav_nav a:hover {
+  background: #1f5f95;
+  color: #ffffff;
+}
+
+/* Large desktop */
+@media (max-width: 1200px) {
+  .page-wrap {
+    padding: 1rem;
+  }
+}
+
+/* Small desktop */
+@media (max-width: 992px) {
+  #nav_menu a {
+    padding: 0.75rem 0.9rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  #nav_menu {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: block;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}
+
+/* Large phone */
+@media (max-width: 560px) {
+  .page-wrap {
+    padding: 0.6rem;
+  }
+
+  .site-header {
+    padding: 0.75rem;
+  }
+
+  .columns > section,
+  .columns > aside,
+  .columns > article,
+  .interest-card {
+    flex-basis: 100%;
+  }
+}
+
+/* Small phone */
+@media (max-width: 420px) {
+  .content {
+    padding: 0.8rem;
+  }
+
+  .intro h1 {
+    font-size: 1.45rem;
+  }
+
+  .intro h2 {
+    font-size: 1.1rem;
+  }
 }
