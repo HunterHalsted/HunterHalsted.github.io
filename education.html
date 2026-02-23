@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio - Education</title>
+  <meta name="description" content="Education details">
+  <meta name="keywords" content="Portfolio, resume, education, Hunter Halsted">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slicknav@1.0.10/dist/slicknav.min.css">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="bluetouch">
+          <img src="images/free-nature-images.jpg" alt="Portfolio banner image">
+        </div>
+      </header>
+
+      <nav id="mobile_menu"></nav>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="education.html">Education</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="occupation.html">Occupation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <section class="intro">
+          <h1>Education</h1>
+          <h2>Academic Background</h2>
+        </section>
+
+        <section class="columns">
+          <article>
+            <h3>Southern Illinois University</h3>
+            <p>School of Computing coursework in software development, data systems, and AI topics.</p>
+          </article>
+          <article>
+            <h3>Learning Goals</h3>
+            <p>Continue strengthening practical skills in application design, systems thinking, and team collaboration.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <p>Updated for responsive, fluid layout requirements.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slicknav@1.0.10/dist/jquery.slicknav.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav_menu ul").slicknav({
+        prependTo: "#mobile_menu",
+        label: "Menu"
+      });
+    });
+  </script>
+</body>
+</html>

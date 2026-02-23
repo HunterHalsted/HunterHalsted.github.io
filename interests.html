@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio - Interests</title>
+  <meta name="description" content="Interests and activities">
+  <meta name="keywords" content="Portfolio, resume, interests, Hunter Halsted">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slicknav@1.0.10/dist/slicknav.min.css">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="bluetouch">
+          <img src="images/free-nature-images.jpg" alt="Portfolio banner image">
+        </div>
+      </header>
+
+      <nav id="mobile_menu"></nav>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a class="current" href="interests.html">Interests</a></li>
+          <li><a href="occupation.html">Occupation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <section class="intro">
+          <h1>Interests</h1>
+          <h2>Responsive Multi-Column Layout</h2>
+          <p>These columns flow from desktop to mobile without using CSS Grid.</p>
+        </section>
+
+        <section class="interest-columns">
+          <article class="interest-card">
+            <h3>Technology</h3>
+            <p>I enjoy building projects with web technologies, scripting tools, and practical automation.</p>
+          </article>
+
+          <article class="interest-card">
+            <h3>Movies</h3>
+            <p>I like studying storytelling and cinematography to understand pacing, structure, and style.</p>
+          </article>
+
+          <article class="interest-card">
+            <h3>Professional Growth</h3>
+            <p>I am interested in team-based software development, clear communication, and long-term skill growth.</p>
+          </article>
+
+          <article class="interest-card">
+            <h3>Continuous Learning</h3>
+            <p>I regularly review documentation and experiment with new tools to stay current and capable.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <p>Interests page built with a fluid flexbox column system.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slicknav@1.0.10/dist/jquery.slicknav.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav_menu ul").slicknav({
+        prependTo: "#mobile_menu",
+        label: "Menu"
+      });
+    });
+  </script>
+</body>
+</html>
