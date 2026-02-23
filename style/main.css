@@ -1,4 +1,4 @@
-﻿/* Hunter Halsted Personal Portfolio CSS */
+/* Hunter Halsted Personal Portfolio CSS */
 * {
   box-sizing: border-box;
 }
@@ -147,20 +147,6 @@ footer p {
   margin: 0;
 }
 
-.slicknav_menu {
-  background: #0f3a61;
-}
-
-.slicknav_nav a {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.slicknav_nav a:hover {
-  background: #1f5f95;
-  color: #ffffff;
-}
-
 /* Large desktop */
 @media (max-width: 1200px) {
   .page-wrap {
@@ -222,3 +208,4 @@ footer p {
     font-size: 1.1rem;
   }
 }
+
