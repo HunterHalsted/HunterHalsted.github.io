@@ -32,10 +32,17 @@ body {
   overflow: hidden;
 }
 
+.main-graphic {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
 .main-graphic img {
-  width: 250px;          /* adjust size as needed */
-  border-radius: 15px;   /* rounded corners */
-  transition: 0.3s ease; /* smooth fade */
+  width: 260px;          /* adjust size */
+  height: auto;
+  border-radius: 18px;   /* rounded corners */
+  transition: 0.3s ease;
   cursor: pointer;
 }
 
@@ -228,6 +235,7 @@ footer p {
     font-size: 1.1rem;
   }
 }
+
 
 
 
