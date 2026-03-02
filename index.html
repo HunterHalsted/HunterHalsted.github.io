@@ -93,5 +93,16 @@
       });
     });
   </script>
+  <script>
+  const rollImg = document.getElementById("rollover-img");
+
+  rollImg.addEventListener("mouseover", () => {
+    rollImg.src = "images/main2.jpg";   // hover image
+  });
+
+  rollImg.addEventListener("mouseout", () => {
+    rollImg.src = "images/main1.jpg";   // original image
+  });
+</script>
 </body>
 </html>
