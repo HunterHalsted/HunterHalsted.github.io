@@ -1,0 +1,14 @@
+.slicknav_menu {
+  background: #0f3a61;
+}
+
+.slicknav_nav a {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.slicknav_nav a:hover {
+  background: #1f5f95;
+  color: #ffffff;
+}
+
