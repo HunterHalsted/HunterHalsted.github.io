@@ -164,6 +164,53 @@ body {
   margin-top: 0;
 }
 
+.table-section {
+  margin-top: 1.5rem;
+}
+
+.portfolio-table-figure {
+  margin: 0;
+  background: #f7fbff;
+  border: 1px solid #d6e7f7;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.portfolio-table-figure figcaption {
+  margin-bottom: 0.85rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f3a61;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #7ea6c7;
+  background: #ffffff;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  border: 1px solid #7ea6c7;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.portfolio-table thead {
+  background: #dbeefe;
+}
+
+.portfolio-table tfoot {
+  background: #eef6fd;
+  font-weight: 700;
+}
+
+.portfolio-table tbody tr:nth-child(even) {
+  background: #f9fcff;
+}
+
 footer {
   border-top: 1px solid #d6e7f7;
   padding: 1rem 1.25rem;
@@ -218,6 +265,53 @@ footer p {
   .columns > article,
   .interest-card {
     flex-basis: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  .portfolio-table,
+  .portfolio-table thead,
+  .portfolio-table tbody,
+  .portfolio-table tfoot,
+  .portfolio-table tr,
+  .portfolio-table th,
+  .portfolio-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .portfolio-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .portfolio-table tbody tr,
+  .portfolio-table tfoot tr {
+    margin-bottom: 0.9rem;
+    border: 1px solid #7ea6c7;
+    background: #ffffff;
+  }
+
+  .portfolio-table td {
+    border: 1px solid #7ea6c7;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .portfolio-table tbody td::before {
+    content: attr(data-label) ": ";
+    font-weight: 700;
+    color: #0f3a61;
+  }
+
+  .portfolio-table tfoot td {
+    font-weight: 700;
+    background: #eef6fd;
   }
 }
 
