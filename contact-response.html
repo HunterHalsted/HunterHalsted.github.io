@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio - Contact Response</title>
+  <meta name="description" content="Contact form response">
+  <meta name="keywords" content="Portfolio, resume, contact response, Hunter Halsted">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="bluetouch">
+          <img src="images/free-nature-images.jpg" alt="Portfolio banner image">
+        </div>
+        <div class="main-graphic">
+          <img id="rollover-img" src="images/free-nature-images.jpg" alt="Main Graphic">
+        </div>
+      </header>
+
+      <nav id="mobile_menu"></nav>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="occupation.html">Occupation</a></li>
+          <li><a class="current" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <section class="intro">
+          <h1>Submission Received</h1>
+          <h2>Thank You for Reaching Out</h2>
+          <p>Your form was submitted with the GET method. A summary of your information appears below.</p>
+        </section>
+
+        <section class="response-card">
+          <dl class="response-list">
+            <div><dt>Email</dt><dd id="response-email"></dd></div>
+            <div><dt>Password</dt><dd id="response-password"></dd></div>
+            <div><dt>Full Name</dt><dd id="response-fullName"></dd></div>
+            <div><dt>Address</dt><dd id="response-address"></dd></div>
+            <div><dt>City</dt><dd id="response-city"></dd></div>
+            <div><dt>State</dt><dd id="response-state"></dd></div>
+            <div><dt>Zip</dt><dd id="response-zip"></dd></div>
+            <div><dt>Phone Number</dt><dd id="response-phone"></dd></div>
+            <div><dt>Creation Date</dt><dd id="response-creationDate"></dd></div>
+            <div><dt>Message</dt><dd id="response-message"></dd></div>
+            <div><dt>Type of Inquiry</dt><dd id="response-inquiryType"></dd></div>
+          </dl>
+          <p><a class="back-link" href="contact.html">Return to the contact form</a></p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Contact response page</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav_menu ul").slicknav({
+        prependTo: "#mobile_menu",
+        label: "Menu"
+      });
+    });
+  </script>
+  <script>
+    const rollImg = document.getElementById("rollover-img");
+
+    rollImg.addEventListener("mouseover", () => {
+      rollImg.src = "images/something1.jpg";
+    });
+
+    rollImg.addEventListener("mouseout", () => {
+      rollImg.src = "images/free-nature-images.jpg";
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const fieldIds = [
+      "email",
+      "password",
+      "fullName",
+      "address",
+      "city",
+      "state",
+      "zip",
+      "phone",
+      "creationDate",
+      "message",
+      "inquiryType"
+    ];
+
+    fieldIds.forEach((field) => {
+      const target = document.getElementById(`response-${field}`);
+      const value = params.get(field);
+
+      if (field === "password" && value) {
+        target.textContent = "*".repeat(value.length);
+        return;
+      }
+
+      target.textContent = value ? value : "No value received";
+    });
+  </script>
+</body>
+</html>
